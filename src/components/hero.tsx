@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Header from "./header";
 
 const HeroSection: React.FC = () => {
   const [currentImage, setCurrentImage] = useState(0);

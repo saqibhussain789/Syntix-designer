@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const TestimonialSection = () => {
   const testimonials = [
@@ -64,7 +64,7 @@ const TestimonialSection = () => {
     },
   ];
 
-  const [activeIndex, setActiveIndex] = useState(0); // Default first student's testimonial shown
+  const [activeIndex, setActiveIndex] = useState(0); 
 
   return (
     <section className="bg-white py-16" id="testimonial">
@@ -72,7 +72,7 @@ const TestimonialSection = () => {
         {/* Heading Section */}
         <div className="text-left mb-10">
           <h1 className="text-4xl font-semibold">
-            <span className="text-black text-4xl">HAPPY</span> 
+            <span className="text-black text-4xl">HAPPY</span>
           </h1>
           <h1 className="text-6xl font-extrabold text-gray-800">STUDENTS</h1>
           <p className="text-gray-500 text-2xl mt-4">
