@@ -1,5 +1,3 @@
-import React from "react";
-
 const PopularCourses = () => {
   return (
     <section className="bg-gray-100 py-16" id="courses">

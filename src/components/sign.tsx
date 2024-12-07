@@ -66,16 +66,7 @@ const SignUp = () => {
                   </div>
                 </div>
 
-                {/* Fixed: TypeScript-safe <textarea> */}
-                <p style={{ display: 'none !important' }}>
-                  <label>
-                    <textarea
-                      name="_wpcf7_ak_hp_textarea"
-                      cols={45} // Updated to number type
-                      rows={8} // Updated to number type
-                      maxLength={100} // Updated to number type
-                    ></textarea>
-                  </label>
+                
                   <input
                     type="hidden"
                     id="ak_js_2"
@@ -90,7 +81,7 @@ const SignUp = () => {
                       );
                     `}
                   </script>
-                </p>
+               
                 <div className="wpcf7-response-output" aria-hidden="true"></div>
               </form>
             </div>

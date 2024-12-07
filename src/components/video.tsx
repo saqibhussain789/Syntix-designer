@@ -1,5 +1,3 @@
-import React from "react";
-
 const VideoSection = () => {
   return (
     <section className="bg-white py-16">

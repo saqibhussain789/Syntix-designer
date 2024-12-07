@@ -1,4 +1,4 @@
-import { useState } from 'react'
+
 import './index.css'
 import './App.css'
 import Header from './components/header'
@@ -15,7 +15,7 @@ import TestimonialSection from './components/testimonial'
 import SignUp from './components/sign'
 import ContactSection from './components/contact'
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
@@ -29,7 +29,7 @@ function App() {
     <TeachersSection/>
     <PricingSection/>
     <TestimonialSection/>
-    {/* <SignUp/> */}
+    <SignUp/>
     <ContactSection/>
     <Footer/>
     </>

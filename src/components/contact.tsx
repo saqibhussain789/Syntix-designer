@@ -1,22 +1,21 @@
-import React from 'react';
-
 const ContactSection = () => {
   return (
     <>
       <section className="w-full py-16 bg-gray-100">
         <div className="container mx-auto px-4">
-        <div className="text-left mb-10">
-          <h1 className="text-6xl font-bold text-gray-800">
-            <span className="text-black text-4xl">HAVE</span>
-          </h1>
-          <h1 className="text-6xl font-extrabold text-gray-800">QUESTIONS</h1>
-          <p className="text-gray-500 text-2xl mt-4">
-            Phasellus non dolor nibh. Nullam elementum tellus pretium feugiat.
-            <br />
-            Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt in. Sed
-            tincidunt tristique enim sed sollicitudin.
-          </p>
-        </div>
+          <div className="text-left mb-10">
+            <h1 className="text-6xl font-bold text-gray-800">
+              <span className="text-black text-4xl">HAVE</span>
+            </h1>
+            <h1 className="text-6xl font-extrabold text-gray-800">QUESTIONS</h1>
+            <p className="text-gray-500 text-2xl mt-4">
+              Phasellus non dolor nibh. Nullam elementum tellus pretium feugiat.
+              <br />
+              Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt in. Sed
+              tincidunt tristique enim sed sollicitudin.
+            </p>
+          </div>
+
           <div className="flex flex-col md:flex-row">
             <div className="w-full md:w-1/2 lg:w-2/5">
               <div className="h-full relative mb-8 md:mb-0 py-8">
@@ -36,7 +35,7 @@ const ContactSection = () => {
                   method="post"
                   className="wpcf7-form init space-y-4"
                   aria-label="Contact form"
-                  novalidate="novalidate"
+                  
                   data-status="init"
                 >
                   <div style={{ display: 'none' }}>
@@ -48,7 +47,7 @@ const ContactSection = () => {
                     <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
                   </div>
 
-                  <div name="cform" id="cform">
+                  <div id="cform">
                     <div className="space-y-4">
                       <div>
                         <input
@@ -77,7 +76,7 @@ const ContactSection = () => {
                           name="textarea-276"
                           id="comments"
                           className="w-full p-3 border border-gray-300 rounded-md placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                          rows="6"
+                          rows={6}
                           placeholder="Your Message"
                           aria-required="true"
                           aria-invalid="false"
@@ -98,9 +97,9 @@ const ContactSection = () => {
                       &#916;
                       <textarea
                         name="_wpcf7_ak_hp_textarea"
-                        cols="45"
-                        rows="8"
-                        maxlength="100"
+                        cols={45}
+                        rows={8}
+                        maxLength={100}
                         className="hidden"
                       ></textarea>
                     </label>
@@ -112,8 +111,6 @@ const ContactSection = () => {
           </div>
         </div>
       </section>
-
-     
     </>
   );
 };
