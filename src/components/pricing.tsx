@@ -9,12 +9,14 @@ const PricingSection = () => {
       id="pricing"
     >
       <div className="container mx-auto px-4 text-center">
-      <div className="text-left mb-10">
-          <h1 className="text-6xl font-bold text-white">
-            <span className="text-white text-4xl">EASY</span>
+        <div className="text-left mb-10">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">
+            <span className="text-white text-2xl sm:text-3xl lg:text-4xl">EASY</span>
           </h1>
-          <h1 className="text-6xl font-extrabold text-white">PRICING</h1>
-          <p className="text-white text-2xl mt-4">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white">
+            PRICING
+          </h1>
+          <p className="text-white text-lg sm:text-xl lg:text-2xl mt-4">
             Phasellus non dolor nibh. Nullam elementum tellus pretium feugiat.
             <br />
             Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt in. Sed
@@ -26,7 +28,7 @@ const PricingSection = () => {
           {/* Starter Plan */}
           <div className="bg-white shadow-lg rounded-lg p-6 text-center hover:shadow-xl transition-all duration-300">
             <div className="plan-name">
-              <h2 className="text-2xl font-semibold text-gray-800">Starter</h2>
+              <h2 className="text-2xl sm:text-3xl font-semibold text-gray-800">Starter</h2>
               <h4 className="text-xl text-gray-500">Monthly Plan</h4>
             </div>
             <div className="plan-price mt-4">
@@ -53,7 +55,7 @@ const PricingSection = () => {
           {/* Unlimited Plan (Best Plan) */}
           <div className="bg-yellow-500 text-white shadow-lg rounded-lg p-6 text-center hover:shadow-xl transition-all duration-300">
             <div className="plan-name">
-              <h2 className="text-2xl font-semibold">Unlimited</h2>
+              <h2 className="text-2xl sm:text-3xl font-semibold">Unlimited</h2>
               <h4 className="text-xl">Monthly Plan</h4>
             </div>
             <div className="plan-price mt-4">
@@ -80,7 +82,7 @@ const PricingSection = () => {
           {/* Premium Plan */}
           <div className="bg-white shadow-lg rounded-lg p-6 text-center hover:shadow-xl transition-all duration-300">
             <div className="plan-name">
-              <h2 className="text-2xl font-semibold text-gray-800">Premium</h2>
+              <h2 className="text-2xl sm:text-3xl font-semibold text-gray-800">Premium</h2>
               <h4 className="text-xl text-gray-500">Monthly Plan</h4>
             </div>
             <div className="plan-price mt-4">

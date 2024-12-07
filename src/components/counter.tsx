@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { FaSmile, FaBook, FaVideo, FaChalkboardTeacher, FaCertificate } from "react-icons/fa"; // Importing relevant icons
 
 // Define the type for the counter state
@@ -22,10 +22,10 @@ const CounterSection = () => {
 
   // Function to animate the numbers
   const animateCounter = (
-    from: number,   // 'from' should be a number
-    to: number,     // 'to' should be a number
-    id: keyof CounterState, // 'id' will be a key from the 'counter' state object, e.g., 'happyStudents'
-    speed: number   // 'speed' should be a number indicating the interval speed
+    from: number,
+    to: number,
+    id: keyof CounterState,
+    speed: number
   ) => {
     let currentValue = from;
     const interval = setInterval(() => {
@@ -48,56 +48,57 @@ const CounterSection = () => {
     animateCounter(100, 2200, "videoCourses", 1);
     animateCounter(100, 1450, "totalTeachers", 1);
     animateCounter(100, 550, "certifications", 1);
-  }, []); // Empty dependency array means it will run only once after the component mounts
+  }, []);
+
+  // UseMemo to format large numbers with commas (e.g., 24,500 instead of 24500)
+  const formattedCounter = useMemo(() => {
+    return {
+      happyStudents: counter.happyStudents.toLocaleString(),
+      totalCourses: counter.totalCourses.toLocaleString(),
+      videoCourses: counter.videoCourses.toLocaleString(),
+      totalTeachers: counter.totalTeachers.toLocaleString(),
+      certifications: counter.certifications.toLocaleString(),
+    };
+  }, [counter]);
 
   return (
     <section className="bg-yellow-200 py-16 numbers_section factabout">
       <div className="container mx-auto px-4">
-        <ul className="numbers countarea grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-          <li className="flex items-center justify-center text-center space-x-4">
+        <ul className="numbers countarea grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+          <li className="flex flex-col items-center text-center space-y-2">
             <FaSmile className="text-4xl text-yellow-600" />
-            <div>
-              <h3 className="timer text-4xl font-bold text-yellow-800">
-                {counter.happyStudents}
-              </h3>
-              <span className="text-lg text-gray-600">Happy Students</span>
-            </div>
+            <h3 className="timer text-4xl font-bold text-yellow-800">
+              {formattedCounter.happyStudents}
+            </h3>
+            <span className="text-lg text-gray-600">Happy Students</span>
           </li>
-          <li className="flex items-center justify-center text-center space-x-4">
+          <li className="flex flex-col items-center text-center space-y-2">
             <FaBook className="text-4xl text-yellow-600" />
-            <div>
-              <h3 className="timer text-4xl font-bold text-yellow-800">
-                {counter.totalCourses}
-              </h3>
-              <span className="text-lg text-gray-600">Total Courses</span>
-            </div>
+            <h3 className="timer text-4xl font-bold text-yellow-800">
+              {formattedCounter.totalCourses}
+            </h3>
+            <span className="text-lg text-gray-600">Total Courses</span>
           </li>
-          <li className="flex items-center justify-center text-center space-x-4">
+          <li className="flex flex-col items-center text-center space-y-2">
             <FaVideo className="text-4xl text-yellow-600" />
-            <div>
-              <h3 className="timer text-4xl font-bold text-yellow-800">
-                {counter.videoCourses}
-              </h3>
-              <span className="text-lg text-gray-600">Video Courses</span>
-            </div>
+            <h3 className="timer text-4xl font-bold text-yellow-800">
+              {formattedCounter.videoCourses}
+            </h3>
+            <span className="text-lg text-gray-600">Video Courses</span>
           </li>
-          <li className="flex items-center justify-center text-center space-x-4">
+          <li className="flex flex-col items-center text-center space-y-2">
             <FaChalkboardTeacher className="text-4xl text-yellow-600" />
-            <div>
-              <h3 className="timer text-4xl font-bold text-yellow-800">
-                {counter.totalTeachers}
-              </h3>
-              <span className="text-lg text-gray-600">Total Teachers</span>
-            </div>
+            <h3 className="timer text-4xl font-bold text-yellow-800">
+              {formattedCounter.totalTeachers}
+            </h3>
+            <span className="text-lg text-gray-600">Total Teachers</span>
           </li>
-          <li className="flex items-center justify-center text-center space-x-4">
+          <li className="flex flex-col items-center text-center space-y-2">
             <FaCertificate className="text-4xl text-yellow-600" />
-            <div>
-              <h3 className="timer text-4xl font-bold text-yellow-800">
-                {counter.certifications}
-              </h3>
-              <span className="text-lg text-gray-600">Certifications</span>
-            </div>
+            <h3 className="timer text-4xl font-bold text-yellow-800">
+              {formattedCounter.certifications}
+            </h3>
+            <span className="text-lg text-gray-600">Certifications</span>
           </li>
         </ul>
       </div>

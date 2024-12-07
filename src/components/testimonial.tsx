@@ -64,7 +64,7 @@ const TestimonialSection = () => {
     },
   ];
 
-  const [activeIndex, setActiveIndex] = useState(0); 
+  const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <section className="bg-white py-16" id="testimonial">
@@ -82,22 +82,20 @@ const TestimonialSection = () => {
             tincidunt tristique enim sed sollicitudin.
           </p>
         </div>
+
         {/* Image Slider Section */}
-        <div className="flex justify-center space-x-6 mb-12">
+        <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-10 gap-6 mb-12">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="relative group w-24 h-24 rounded-full overflow-hidden shadow-lg transition-all duration-300"
+              className="relative group w-full h-24 rounded-full overflow-hidden shadow-lg transition-all duration-300"
               onMouseEnter={() => setActiveIndex(index)} // Update activeIndex on hover
             >
               <img
-                className={`w-full h-full object-cover transition-all duration-300 ${
-                  activeIndex === index ? "opacity-40" : "group-hover:opacity-100"
-                } ${activeIndex === index ? "transform scale-110" : ""}`}
+                className={`w-full h-full object-cover transition-all duration-300 ${activeIndex === index ? "opacity-40" : "group-hover:opacity-100"} ${activeIndex === index ? "transform scale-110" : ""}`}
                 src={`https://shtheme.com/demosd/elearn/wp-content/uploads/2023/05/${testimonial.image}`}
                 alt={`Student ${index + 1}`}
               />
-              {/* Hover effect color change */}
               <div
                 className={`absolute inset-0 bg-yellow-500 opacity-0 group-hover:opacity-70 transition-opacity duration-300`}
               ></div>
@@ -108,7 +106,6 @@ const TestimonialSection = () => {
         {/* Testimonial Text Section */}
         <div className="flex justify-center">
           <div className="max-w-3xl w-full text-left">
-            {/* Show the current active student's testimonial */}
             <div className="transition-all duration-300">
               <p className="font-semibold text-gray-600">{testimonials[activeIndex].thoughts}</p>
               <h3 className="text-xl font-bold text-gray-800 uppercase mt-4">

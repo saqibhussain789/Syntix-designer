@@ -25,17 +25,17 @@ const VideoSection = () => {
           </div>
 
           {/* Text Content Section */}
-          <div className="w-full sm:w-1/2 px-10 p-4 flex flex-col ">
-            <h1 className="text-6xl font-semibold text-black mb-4">
+          <div className="w-full sm:w-1/2 px-10 p-4 flex flex-col">
+            <h1 className="text-4xl sm:text-6xl font-semibold text-black mb-4">
               Watch. Listen. Practice. Learn.
             </h1>
-            <p className="text-xl text-gray-500 mb-4">
+            <p className="text-lg sm:text-xl text-gray-500 mb-4">
               Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt
               adipiscing atgfnte varius at. Sed mollis vestibulum sapien sed
               mattis. Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt
               adipiscing ante varius at. Sed mollis vestibulum sapien sed mattis.
             </p>
-            <p className="text-xl text-gray-500 mb-4">
+            <p className="text-lg sm:text-xl text-gray-500 mb-4">
               Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt
               adipiscing atgfnte tibulum sapien sed mattis. Cras dictum tellus dui.
               Sed mollis vestibulum sapien rthsed mattis. Cras dictum tellus duvi,

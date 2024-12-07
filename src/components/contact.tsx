@@ -3,12 +3,13 @@ const ContactSection = () => {
     <>
       <section className="w-full py-16 bg-gray-100">
         <div className="container mx-auto px-4">
+          {/* Header Section */}
           <div className="text-left mb-10">
-            <h1 className="text-6xl font-bold text-gray-800">
-              <span className="text-black text-4xl">HAVE</span>
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-800">
+              <span className="text-black text-3xl md:text-4xl">HAVE</span>
             </h1>
-            <h1 className="text-6xl font-extrabold text-gray-800">QUESTIONS</h1>
-            <p className="text-gray-500 text-2xl mt-4">
+            <h1 className="text-4xl md:text-6xl font-extrabold text-gray-800">QUESTIONS</h1>
+            <p className="text-gray-500 text-lg md:text-2xl mt-4">
               Phasellus non dolor nibh. Nullam elementum tellus pretium feugiat.
               <br />
               Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt in. Sed
@@ -16,35 +17,55 @@ const ContactSection = () => {
             </p>
           </div>
 
+          {/* Contact Content */}
           <div className="flex flex-col md:flex-row">
-            <div className="w-full md:w-1/2 lg:w-2/5">
-              <div className="h-full relative mb-8 md:mb-0 py-8">
+            {/* Map Section */}
+            <div className="w-full md:w-1/2 lg:w-2/5 mb-8 md:mb-0">
+              <div className="h-full relative py-8">
                 <iframe
                   loading="lazy"
-                  className="w-full h-full"
+                  className="w-full h-64 md:h-full"
                   src="https://maps.google.com/maps?q=Central Park, New York, NY, USA&t=m&z=10&output=embed&iwloc=near"
                   title="Central Park, New York, NY, USA"
                 ></iframe>
               </div>
             </div>
-            <div className="w-full md:w-1/2 lg:w-3/5 pl-0 md:pl-12">
+
+            {/* Form Section */}
+            <div className="w-full md:w-1/2 lg:w-3/5 md:pl-12">
               <div id="message"></div>
-              <div className="wpcf7 no-js" id="wpcf7-f224-p7-o3" lang="en-US" dir="ltr">
+              <div
+                className="wpcf7 no-js"
+                id="wpcf7-f224-p7-o3"
+                lang="en-US"
+                dir="ltr"
+              >
                 <form
                   action="/demosd/elearn/#wpcf7-f224-p7-o3"
                   method="post"
                   className="wpcf7-form init space-y-4"
                   aria-label="Contact form"
-                  
                   data-status="init"
                 >
-                  <div style={{ display: 'none' }}>
+                  <div style={{ display: "none" }}>
                     <input type="hidden" name="_wpcf7" value="224" />
                     <input type="hidden" name="_wpcf7_version" value="5.7.6" />
                     <input type="hidden" name="_wpcf7_locale" value="en_US" />
-                    <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f224-p7-o3" />
-                    <input type="hidden" name="_wpcf7_container_post" value="7" />
-                    <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+                    <input
+                      type="hidden"
+                      name="_wpcf7_unit_tag"
+                      value="wpcf7-f224-p7-o3"
+                    />
+                    <input
+                      type="hidden"
+                      name="_wpcf7_container_post"
+                      value="7"
+                    />
+                    <input
+                      type="hidden"
+                      name="_wpcf7_posted_data_hash"
+                      value=""
+                    />
                   </div>
 
                   <div id="cform">
@@ -92,7 +113,7 @@ const ContactSection = () => {
                     </div>
                   </div>
 
-                  <div style={{ display: 'none !important' }}>
+                  <div style={{ display: "none !important" }}>
                     <label>
                       &#916;
                       <textarea
@@ -103,7 +124,12 @@ const ContactSection = () => {
                         className="hidden"
                       ></textarea>
                     </label>
-                    <input type="hidden" id="ak_js_3" name="_wpcf7_ak_js" value="192" />
+                    <input
+                      type="hidden"
+                      id="ak_js_3"
+                      name="_wpcf7_ak_js"
+                      value="192"
+                    />
                   </div>
                 </form>
               </div>

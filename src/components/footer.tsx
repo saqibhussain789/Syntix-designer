@@ -1,9 +1,9 @@
-import { FaTwitter, FaFacebookF, FaGooglePlusG, FaVimeoV, FaYoutube } from 'react-icons/fa';
+import { FaTwitter, FaFacebookF, FaGooglePlusG, FaVimeoV, FaYoutube, FaPaypal, FaAmazon, FaCcVisa, FaCcMastercard, FaCcDiscover } from 'react-icons/fa';
 
 const Footer = () => {
   return (
     <footer className="bg-blue-800 text-white py-12">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         {/* Footer Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
           
@@ -70,12 +70,12 @@ const Footer = () => {
             <p className="text-sm mb-4">
               Phasellus mattis felis quis enim viverra. Nullam porta risus felis, vitaeuk dapibus arcu viverra eu.
             </p>
-            <div className="flex space-x-4 flex-wrap justify-start">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/PayPal_logo.svg/800px-PayPal_logo.svg.png" alt="PayPal" className="w-12 h-6 mb-2" />
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Amazon_icon.png/800px-Amazon_icon.png" alt="Amazon" className="w-12 h-6 mb-2" />
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Visa_Inc._logo.svg/800px-Visa_Inc._logo.svg.png" alt="Visa" className="w-12 h-6 mb-2" />
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/MasterCard_2019_logo.svg/800px-MasterCard_2019_logo.svg.png" alt="MasterCard" className="w-12 h-6 mb-2" />
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Discover_Card_logo_2016.svg/800px-Discover_Card_logo_2016.svg.png" alt="Discover" className="w-12 h-6 mb-2" />
+            <div className="flex space-x-4 flex-wrap">
+              <FaPaypal className="text-4xl text-yellow-400" />
+              <FaAmazon className="text-4xl text-yellow-400" />
+              <FaCcVisa className="text-4xl text-yellow-400" />
+              <FaCcMastercard className="text-4xl text-yellow-400" />
+              <FaCcDiscover className="text-4xl text-yellow-400" />
             </div>
           </div>
         </div>
@@ -83,7 +83,7 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="text-center mt-12">
           <p className="text-sm text-gray-400">
-            © 2024 Elearn Theme. All rights reserved.
+            © 2024 SyntixDesigner. All rights reserved.
           </p>
         </div>
       </div>

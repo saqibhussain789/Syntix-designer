@@ -43,7 +43,7 @@ const Header: React.FC = () => {
 
       {/* Mobile Dropdown Menu */}
       {isMenuOpen && (
-        <ul className="md:hidden bg-black bg-opacity-90 text-white font-semibold space-y-4 p-4">
+        <ul className="md:hidden bg-black bg-opacity-90 text-white font-semibold space-y-4 p-4 text-center">
           {navItems.map((item, index) => (
             <li key={index} className="hover:text-gray-400 cursor-pointer">
               {item}

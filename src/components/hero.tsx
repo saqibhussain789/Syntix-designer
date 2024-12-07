@@ -22,7 +22,7 @@ const HeroSection: React.FC = () => {
 
   return (
     <div
-      className="relative w-full h-screen bg-cover bg-center transition-all duration-1000"
+      className="relative w-full min-h-screen bg-cover bg-center transition-all duration-1000"
       style={{ backgroundImage: `url(${bgImages[currentImage]})` }}
     >
       <div className="absolute inset-0 bg-blue-900 bg-opacity-50 z-0"></div>

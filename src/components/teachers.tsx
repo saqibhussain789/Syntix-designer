@@ -1,4 +1,3 @@
-
 import { FaFacebook, FaTwitter, FaGoogle, FaYoutube } from "react-icons/fa";
 
 const TeachersSection = () => {
