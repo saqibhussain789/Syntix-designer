@@ -8,7 +8,7 @@ const PricingSection = () => {
       }}
       id="pricing"
     >
-      <div className="container mx-auto text-center">
+      <div className="container mx-auto px-4 text-center">
       <div className="text-left mb-10">
           <h1 className="text-6xl font-bold text-white">
             <span className="text-white text-4xl">EASY</span>
