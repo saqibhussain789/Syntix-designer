@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"; // Import Link for navigation
+
 const PopularCourses = () => {
   return (
     <section className="bg-gray-100 py-16" id="courses">
@@ -27,21 +29,21 @@ const PopularCourses = () => {
                 alt="WordPress Essential Training"
                 className="w-full h-auto rounded-lg"
               />
-              <a
-                href="https://shtheme.com/demosd/elearn/?course=branding-thoughts-2"
+              <Link
+                to="/course/branding-thoughts-2"
                 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl group-hover:block opacity-0 group-hover:opacity-100"
               >
                 <i className="fa fa-play"></i>
-              </a>
+              </Link>
             </div>
             <div className="flex flex-col mt-4">
               <h3 className="text-xl font-semibold text-blue-900">
-                <a
-                  href="https://shtheme.com/demosd/elearn/?course=branding-thoughts-2"
+                <Link
+                  to="/course/branding-thoughts-2"
                   className="hover:text-yellow-400"
                 >
                   WordPress Essential Training
-                </a>
+                </Link>
               </h3>
               <p className="text-gray-600">May 16, 2023</p>
             </div>
@@ -56,21 +58,21 @@ const PopularCourses = () => {
                 alt="Practicing Photographer"
                 className="w-full h-auto rounded-lg"
               />
-              <a
-                href="https://shtheme.com/demosd/elearn/?course=lightroom-cc-essential-2"
+              <Link
+                to="/course/lightroom-cc-essential-2"
                 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl group-hover:block opacity-0 group-hover:opacity-100"
               >
                 <i className="fa fa-play"></i>
-              </a>
+              </Link>
             </div>
             <div className="flex flex-col mt-4">
               <h3 className="text-xl font-semibold text-blue-900">
-                <a
-                  href="https://shtheme.com/demosd/elearn/?course=lightroom-cc-essential-2"
+                <Link
+                  to="/course/lightroom-cc-essential-2"
                   className="hover:text-yellow-400"
                 >
                   Practicing Photographer
-                </a>
+                </Link>
               </h3>
               <p className="text-gray-600">May 16, 2023</p>
             </div>
@@ -85,21 +87,21 @@ const PopularCourses = () => {
                 alt="Lightroom CC Essential"
                 className="w-full h-auto rounded-lg"
               />
-              <a
-                href="https://shtheme.com/demosd/elearn/?course=practicing-photographer-2"
+              <Link
+                to="/course/practicing-photographer-2"
                 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl group-hover:block opacity-0 group-hover:opacity-100"
               >
                 <i className="fa fa-play"></i>
-              </a>
+              </Link>
             </div>
             <div className="flex flex-col mt-4">
               <h3 className="text-xl font-semibold text-blue-900">
-                <a
-                  href="https://shtheme.com/demosd/elearn/?course=practicing-photographer-2"
+                <Link
+                  to="/course/practicing-photographer-2"
                   className="hover:text-yellow-400"
                 >
                   Lightroom CC Essential
-                </a>
+                </Link>
               </h3>
               <p className="text-gray-600">May 16, 2023</p>
             </div>
@@ -114,21 +116,21 @@ const PopularCourses = () => {
                 alt="Branding Thoughts"
                 className="w-full h-auto rounded-lg"
               />
-              <a
-                href="https://shtheme.com/demosd/elearn/?course=wordpress-essential-training-3"
+              <Link
+                to="/course/wordpress-essential-training-3"
                 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl group-hover:block opacity-0 group-hover:opacity-100"
               >
                 <i className="fa fa-play"></i>
-              </a>
+              </Link>
             </div>
             <div className="flex flex-col mt-4">
               <h3 className="text-xl font-semibold text-blue-900">
-                <a
-                  href="https://shtheme.com/demosd/elearn/?course=wordpress-essential-training-3"
+                <Link
+                  to="/course/wordpress-essential-training-3"
                   className="hover:text-yellow-400"
                 >
                   Branding Thoughts
-                </a>
+                </Link>
               </h3>
               <p className="text-gray-600">May 16, 2023</p>
             </div>
@@ -136,16 +138,15 @@ const PopularCourses = () => {
 
           {/* Additional Courses (Course 5 to Course 8) */}
           {/* Repeat the above structure for the remaining courses */}
-          
         </ul>
 
         <div className="text-center mt-8">
-          <a
-            href="https://shtheme.com/demosd/elearn/?page_id=81"
+          <Link
+            to="/courses"
             className="bg-blue-900 text-white py-3 px-8 text-xl font-semibold rounded-lg hover:bg-blue-800"
           >
             View all Courses
-          </a>
+          </Link>
         </div>
       </div>
     </section>

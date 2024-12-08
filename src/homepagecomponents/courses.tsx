@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom"; // Import Link for navigation
 
 const AvailableCourses = () => {
   const [activeTab, setActiveTab] = useState("1");
@@ -99,7 +100,10 @@ const AvailableCourses = () => {
                       </div>
                       <div className="w-full sm:w-1/2 lg:w-3/5 p-4">
                         <h3 className="text-2xl font-semibold mb-4">
-                          {tab.title}
+                          {/* Change the anchor to Link for navigating to CourseDetailPage */}
+                          <Link to={`/course/${tab.id}`} className="hover:text-blue-600">
+                            {tab.title}
+                          </Link>
                         </h3>
                         <p className="text-lg text-gray-700">{tab.description}</p>
                       </div>
